@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Next Face</string>
+    <string name="version">ver1.1</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_logo_desc">Home Logo</string>
+    <string name="register">Đăng Ký</string>
+    <string name="authenticate">Xác Thực</string>
+    <string name="home">Home</string>
+    <string name="authentication">Xác Thực</string>
+    <string name="voice_register">Đăng Ký Face&amp;Voice</string>
+    <string name="voiceRegisterAgain">Đăng Ký Lại</string>
+    <string name="default_description">Vui lòng đưa khuôn mặt của bạn vào khung hình</string>
+    <string name="default_name">Bệnh nhân Nguyễn Văn A</string>
+    <string name="voice_desc">Vui lòng ấn nút và đọc lời xác nhận dưới đây</string>
+    <string name="avatar_of_staff">Avatar of staff</string>
+    <string name="default_auth_dialogue">Sử dụng giọng nói của tôi làm mật khẩu để xác thực </string>
+    <string name="default_reg_dialogue">Sau khi đã xác định chính xác tình trạng bệnh nhân đã gặp phải, bác sĩ sẽ đưa ra phương pháp điều trị và lời khuyên chi tiết cho bệnh nhân. Hiểu rõ phương pháp hay lời khuyên của bác sĩ sẽ giúp sức khỏe chuyển biến theo chiều hướng tích cực </string>
+    <string name="registerSuccessfully">Đăng ký thành công!</string>
+    <string name="registerFailed">Đăng ký thành công!</string>
+    <string name="authenticateSuccessfully">Xác thực thành công!</string>
+    <string name="authenticateFailed">Xác thực thất bại!</string>
+    <string name="identificationSuccessfully">Nhận diện thành công!</string>
+    <string name="identificationFailed">Nhận diện thất bại!</string>
+    <string name="identificationFailedWithCause">Nhận diện thất bại!\n\nKhông có đủ Key member!</string>
+    <string name="staff">"Bệnh nhân "</string>
+    <string name="fiveMinutes">5:00</string>
+    <string name="timeVerify">1:00</string>
+    <string name="msgFaceUnregistered">Bạn chưa đăng ký khuôn mặt</string>
+    <string name="msgPleaseRegisterVoice">Đăng ký Face và voice.</string>
+    <string name="userNotRegisteredVoice">MATCH</string>
+    <string name="zeroMinutes">00:00</string>
+    <string name="invalidAudio">Invalid Audio</string>
+    <string name="shortSpeech">Short speech</string>
+    <string name="voiceExist">Voice exist</string>
+    <string name="textview">TextView</string>
+</resources>

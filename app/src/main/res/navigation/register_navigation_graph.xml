@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_navigation_graph"
+    app:startDestination="@id/registerFaceFragment">
+
+    <fragment
+        android:id="@+id/registerFaceFragment"
+        android:name="com.example.nextface_android.fragment.RegisterFaceFragment"
+        android:label="@string/register"
+        tools:layout="@layout/fragment_register_face" >
+        <action
+            android:id="@+id/action_registerFaceFragment_to_registerVoiceFragment"
+            app:destination="@id/registerVoiceFragment" />
+        <action
+            android:id="@+id/action_registerFaceFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:popUpTo="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerVoiceFragment"
+        android:name="com.example.nextface_android.fragment.RegisterVoiceFragment"
+        android:label="@string/register"
+        tools:layout="@layout/fragment_register_voice" >
+        <action
+            android:id="@+id/action_registerVoiceFragment_to_registerResultFragment"
+            app:destination="@id/registerResultFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.nextface_android.activity.HomeActivity"
+        android:label="@string/home"
+        tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/registerResultFragment"
+        android:name="com.example.nextface_android.fragment.RegisterResultFragment"
+        android:label="@string/register"
+        tools:layout="@layout/fragment_register_result" >
+        <action
+            android:id="@+id/action_registerResultFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:popUpTo="@id/homeActivity" />
+    </fragment>
+</navigation>

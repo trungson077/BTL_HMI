@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_navigation_graph"
+    app:startDestination="@id/authenticationFaceFragment">
+
+    <fragment
+        android:id="@+id/authenticationFaceFragment"
+        android:name="com.example.nextface_android.fragment.AuthenticationFaceFragment"
+        android:label="@string/authentication"
+        tools:layout="@layout/fragment_authentication_face" >
+        <action
+            android:id="@+id/action_authenticationFaceFragment_to_authenticationVoiceFragment"
+            app:destination="@id/authenticationVoiceFragment" />
+        <action
+            android:id="@+id/action_authenticationFaceFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/authenticationVoiceFragment"
+        android:name="com.example.nextface_android.fragment.AuthenticationVoiceFragment"
+        android:label="@string/authentication"
+        tools:layout="@layout/fragment_authentication_voice" >
+        <action
+            android:id="@+id/action_authenticationVoiceFragment_to_authenticationResultFragment"
+            app:destination="@id/authenticationResultFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.nextface_android.activity.HomeActivity"
+        android:label="@string/home"
+        tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/authenticationResultFragment"
+        android:name="com.example.nextface_android.fragment.AuthenticationResultFragment"
+        android:label="@string/authentication"
+        tools:layout="@layout/fragment_authentication_result" >
+        <action
+            android:id="@+id/action_authenticationResultFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+</navigation>
